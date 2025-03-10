@@ -32,5 +32,19 @@ namespace Shikhans.Domain.Interfaces
         /// Стек карт, размещённых на ячейке
         /// </summary>
         Stack<ICard> Cards { get; }
+
+        /// <summary>
+        /// Получает соседа ячейки по указанному направлению.
+        /// </summary>
+        /// <param name="direction">Направление, в котором искать соседа.</param>
+        /// <returns>Соседняя ячейка или null, если соседа нет.</returns>
+        ICell GetNeighbor(Direction direction);
+
+        /// <summary>
+        /// Получает всех соседей ячейки по указанным направлениям.
+        /// </summary>
+        /// <param name="directions">Список направлений для поиска соседей.</param>
+        /// <returns>Перечисление соседних ячеек.</returns>
+        IEnumerable<ICell> GetNeighbors(IEnumerable<Direction> directions = null);
     }
 }

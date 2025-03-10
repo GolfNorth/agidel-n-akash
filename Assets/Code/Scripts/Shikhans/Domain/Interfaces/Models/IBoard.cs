@@ -16,7 +16,7 @@ namespace Shikhans.Domain.Interfaces
         /// Высота доски
         /// </summary>
         int Height { get; }
-        
+
         /// <summary>
         /// Индексатор для доступа к ячейкам доски
         /// </summary>

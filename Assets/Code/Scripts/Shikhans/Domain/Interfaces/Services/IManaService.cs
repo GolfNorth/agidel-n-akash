@@ -11,8 +11,8 @@ namespace Shikhans.Domain.Interfaces
         /// Устанавливает символы маны на ячейку
         /// </summary>
         /// <param name="cell">Ячейка, на которую устанавливаются символы</param>
-        /// <param name="symbol">Символы маны, которые нужно установить</param>
-        void SetManaSymbols(ICell cell, ManaSymbol symbol);
+        /// <param name="symbols">Символы маны, которые нужно установить</param>
+        void SetManaSymbols(ICell cell, ManaSymbol symbols);
 
         /// <summary>
         /// Проверяет, есть ли на ячейке указанный символ маны

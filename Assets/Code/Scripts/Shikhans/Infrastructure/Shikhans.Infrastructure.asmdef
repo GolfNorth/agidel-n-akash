@@ -1,3 +1,16 @@
 {
-	"name": "Shikhans.Infrastructure"
+    "name": "Shikhans.Infrastructure",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5a8d20f454e5c0149bf8b440ea3cfdc8"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

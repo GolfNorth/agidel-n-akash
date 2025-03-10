@@ -1,4 +1,6 @@
-﻿namespace Shikhans.Domain.Interfaces
+﻿using Shikhans.Domain.Enums;
+
+namespace Shikhans.Domain.Interfaces
 {
     /// <summary>
     /// Фабрика для создания объектов размещения карт
@@ -8,8 +10,8 @@
         /// <summary>
         /// Создаёт объект размещения для указанной карты
         /// </summary>
-        /// <param name="card">Карта, для которой нужно создать размещение</param>
+        /// <param name="cardType">Тип карты, для которой нужно создать размещение</param>
         /// <returns>Объект размещения</returns>
-        IPlacement CreatePlacement(ICard card);
+        IPlacement CreatePlacement(CardType cardType);
     }
 }
