@@ -77,17 +77,21 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # Feel
-Assets/Plugins/Feel/FeelDemos/
+Assets/Plugins/Feel/FeelDemos/*
 Assets/Plugins/Feel/FeelDemos.meta
-Assets/Plugins/Feel/FeelDemosURP/
+Assets/Plugins/Feel/FeelDemosURP/*
 Assets/Plugins/Feel/FeelDemosURP.meta
-Assets/Plugins/Feel/MMFeedbacks/Demos/
+Assets/Plugins/Feel/MMFeedbacks/Demos/*
 Assets/Plugins/Feel/MMFeedbacks/Demos.meta
-Assets/Plugins/Feel/MMTools/Demos/
+Assets/Plugins/Feel/MMTools/Demos/*
 Assets/Plugins/Feel/MMTools/Demos.meta
-Assets/Plugins/Feel/NiceVibrations/Demo/
+Assets/Plugins/Feel/NiceVibrations/Demo/*
 Assets/Plugins/Feel/NiceVibrations/Demo.meta
 
 # TMP
-Assets/Plugins/TextMesh Pro/Examples & Extras/
+Assets/Plugins/TextMesh Pro/Examples & Extras/*
 Assets/Plugins/TextMesh Pro/Examples & Extras.meta
+
+# Odin
+Assets/Plugins/Sirenix/Demos/*
+Assets/Plugins/Sirenix/Demos.meta

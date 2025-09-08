@@ -7,3 +7,10 @@ ShaderImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 183370
+  packageName: Feel
+  packageVersion: 5.7
+  assetPath: Assets/Feel/MMTools/Accessories/MMShaders/MMSkybox.shader
+  uploadId: 779587

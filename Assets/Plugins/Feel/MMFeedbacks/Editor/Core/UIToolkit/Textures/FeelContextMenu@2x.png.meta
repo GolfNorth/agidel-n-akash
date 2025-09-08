@@ -125,3 +125,10 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 183370
+  packageName: Feel
+  packageVersion: 5.7
+  assetPath: Assets/Feel/MMFeedbacks/Editor/Core/UIToolkit/Textures/FeelContextMenu@2x.png
+  uploadId: 779587
