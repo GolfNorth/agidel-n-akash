@@ -1,0 +1,16 @@
+{
+    "name": "Game.ML",
+    "rootNamespace": "Game.ML",
+    "references": [
+        "GUID:acece7ef0ae027f4b843b3412dccb872"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,4 +1,3 @@
-// Game.Domain/Commands/ICommand.cs
 using Game.Domain.Events;
 
 namespace Game.Domain.Commands

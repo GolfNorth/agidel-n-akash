@@ -21,6 +21,7 @@ namespace Game.Domain.Core
                 Dir.E => (1, 0),
                 Dir.S => (0, 1),
                 Dir.W => (-1, 0),
+                _ => throw new ArgumentOutOfRangeException(nameof(d), d, "Unsupported direction")
             };
         }
 

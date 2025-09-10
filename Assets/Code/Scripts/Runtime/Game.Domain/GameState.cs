@@ -50,10 +50,10 @@ namespace Game.Domain
         /// <summary>
         /// Creates a new game state with a board of the specified size.
         /// </summary>
-        public GameState(int width, int height, int players = 2)
+        public GameState(int width, int height, int players = Players.Count)
         {
             Turn = 0;
-            CurrentPlayerId = 0;
+            CurrentPlayerId = Players.AgidelId; // Agidel starts
             Mana = new int[players];
             Board = new BoardState(width, height);
             Tiles = new Dictionary<Coord, TileRuntime>();
@@ -66,8 +66,17 @@ namespace Game.Domain
         /// </summary>
         public void NextPlayer()
         {
-            CurrentPlayerId = (CurrentPlayerId + 1) % Mana.Length;
+            CurrentPlayerId = Players.Next(CurrentPlayerId);
             Turn++;
+        }
+
+        /// <summary>
+        /// Reverts the turn to the previous player and decrements the turn counter.
+        /// </summary>
+        public void RevertPlayer()
+        {
+            Turn--;
+            CurrentPlayerId = Players.Other(CurrentPlayerId);
         }
 
         /// <summary>
