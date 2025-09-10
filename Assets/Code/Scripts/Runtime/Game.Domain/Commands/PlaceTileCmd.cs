@@ -33,6 +33,12 @@ namespace Game.Domain.Commands
         /// </summary>
         public void Do(GameState state, IEventSink events)
         {
+            // Basic invariants enforced by the Domain (independently of content rules).
+            if (_ownerId != state.CurrentPlayerId)
+            {
+                throw new DomainException($"Wrong player turn: owner={_ownerId}, current={state.CurrentPlayerId}");
+            }
+
             if (!state.Board.InBounds(_pos))
             {
                 throw new DomainException($"PlaceTile out of bounds: {_pos}");
@@ -41,6 +47,7 @@ namespace Game.Domain.Commands
             var cell = state.Board.Get(_pos);
             _prevBase = cell.Base;
 
+            // Domain allows replacing base arbitrarily; concrete constraints live in content rules.
             state.Board.SetBase(_pos, _protoId);
 
             var payload = new PlaceTilePayload
@@ -54,7 +61,7 @@ namespace Game.Domain.Commands
         }
 
         /// <summary>
-        /// Restores the previous base tag and emits a TileRemoved event.
+        /// Reverts the placement and emits <see cref="GameEvent.TileRemoved"/>.
         /// </summary>
         public void Undo(GameState state, IEventSink events)
         {

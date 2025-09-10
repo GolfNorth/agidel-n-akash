@@ -32,6 +32,12 @@
         TurnAdvanced,
 
         /// <summary>
+        /// A placement attempt has been rejected by rules/validator.
+        /// Payload: <see cref="TilePlacementRejectedPayload"/>.
+        /// </summary>
+        TilePlacementRejected,
+
+        /// <summary>
         /// The game has been won (e.g., river path connected).
         /// Payload: <see cref="WinPayload"/>.
         /// </summary>

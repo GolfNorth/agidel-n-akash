@@ -109,6 +109,21 @@ namespace Game.Domain.Board
         {
             if (axis == Axis.Horizontal)
             {
+                if (index < 0 || index >= Height)
+                {
+                    throw new DomainException($"ClearLine: row index out of range: {index} (0..{Height - 1})");
+                }
+            }
+            else
+            {
+                if (index < 0 || index >= Width)
+                {
+                    throw new DomainException($"ClearLine: column index out of range: {index} (0..{Width - 1})");
+                }
+            }
+
+            if (axis == Axis.Horizontal)
+            {
                 for (int x = 0; x < Width; x++)
                 {
                     var c = new Coord(x, index);
