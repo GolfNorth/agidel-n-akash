@@ -1,4 +1,6 @@
-﻿namespace Game.Domain.WinConditions
+﻿using Game.Domain.State;
+
+namespace Game.Domain.WinConditions
 {
     /// <summary>
     /// Abstraction for a win condition check.

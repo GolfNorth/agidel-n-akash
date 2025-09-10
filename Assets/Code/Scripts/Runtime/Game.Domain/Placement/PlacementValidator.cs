@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Game.Domain.Core;
+using Game.Domain.State;
 
 namespace Game.Domain.Placement
 {

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Game.Domain.State;
 
 namespace Game.Domain.WinConditions
 {

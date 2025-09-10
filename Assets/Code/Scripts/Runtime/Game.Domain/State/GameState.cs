@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using Game.Domain.Board;
 using Game.Domain.Core;
-using Game.Domain.Tiles;
 
-namespace Game.Domain
+namespace Game.Domain.State
 {
     /// <summary>
     /// Canonical container for all mutable data of a single match.

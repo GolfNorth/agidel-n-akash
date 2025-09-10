@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Game.Domain.Core;
 
-namespace Game.Domain.Tiles
+namespace Game.Domain.State
 {
     /// <summary>
     /// Per-instance runtime data of a tile placed on the board.

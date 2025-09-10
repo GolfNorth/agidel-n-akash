@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Game.Domain.Core;
 using Game.Domain.Events;
+using Game.Domain.State;
 
 namespace Game.Domain.Commands
 {
